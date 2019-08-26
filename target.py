@@ -1,3 +1,4 @@
+# TODO: Añadir la biblioteca de datetime
 class Target():
     """ 
     Esta clase permite definir un tarjet. Lo que 
