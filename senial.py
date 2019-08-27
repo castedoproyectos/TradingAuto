@@ -17,6 +17,8 @@ class Senial():
         
         #############################
 
+        self.running = None
+
         # TODO Hacer las cuentas
         self.duration = None
         self.earn = None
