@@ -15,4 +15,9 @@ class Senial():
         self.stoploss = stoploss
         self.takeprofit = takeprofit
         
- 
+        #############################
+
+        # TODO Hacer las cuentas
+        self.duration = None
+        self.earn = None
+
