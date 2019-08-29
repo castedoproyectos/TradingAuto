@@ -63,7 +63,7 @@ class Connector:
             add_offset=0,
             hash=0))
     
-        # TODO Ordenarlo al contrario. 0 -> n-1
+    
         list_mensajes = list()
         for item in posts.messages[:]:
             list_mensajes.append(item.message)
