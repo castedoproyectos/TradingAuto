@@ -55,7 +55,7 @@ class Connector:
         """
         posts = self._client(GetHistoryRequest(
             peer=self._channel_entity,
-            limit=100,
+            limit=1,
             offset_date=None,
             offset_id=0,
             max_id=0,
@@ -66,7 +66,13 @@ class Connector:
     
         list_mensajes = list()
         for item in posts.messages[:]:
-            list_mensajes.append(item.message)
+            new_msn = dict()
+            new_msn = {'id': item.id, 
+                       'id_parent': item.reply_to_msg_id,
+                       'datetime': item.date,
+                       'message': item.message}
+
+            list_mensajes.append(new_msn)
             
         return list_mensajes
         

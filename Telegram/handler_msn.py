@@ -8,12 +8,9 @@ class HandlerMsn:
         
 
     def refresh_msn(self):
-        new_msns = self.connector.get_msn(5)
+        new_msns = self.connector.get_msn(1)
         a = 2
 
-
-    def send_msn(self):
-        pass
 
 if __name__== "__main__":
     hm = HandlerMsn()
