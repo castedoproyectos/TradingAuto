@@ -9,7 +9,6 @@ class Connector:
         self._sesion_name = "test"
         self._hash_id = "526632"
         self._hash_num = "eeb7b94dc683848287857f8bfa03aa58"
-
         
         self._client = TelegramClient(self._sesion_name,
                                 self._hash_id,
@@ -42,6 +41,3 @@ class Connector:
             list_mensajes.append(new_msn)
             
         return list_mensajes
-
-
-   

@@ -4,6 +4,7 @@ class HandlerTelegram:
 
     def __init__(self):
         self.connector = Connector()
+        self.list_conn = list()
         self.list_msn = list()
         
 
@@ -27,6 +28,8 @@ class HandlerTelegram:
         
         return new_msns
        
+
+    def _create_new_conexion(self):
 
 
         
