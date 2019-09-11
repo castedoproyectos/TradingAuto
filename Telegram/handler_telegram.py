@@ -30,9 +30,10 @@ class HandlerTelegram:
        
 
     def _create_new_conexion(self):
-
+        pass
 
         
 if __name__== "__main__":
     ht = HandlerTelegram()
-    ht.get_new_msn()
+    new_msn = ht.get_new_msn("https://t.me/joinchat/AAAAAEovusdyxSfqrfCy2A")
+    a = 2

@@ -21,12 +21,12 @@ class Connector:
 
         posts = self._client(GetHistoryRequest(
             peer = channel_entity,
-            limit = 1,
+            limit = number_msn,
             offset_date = None,
             offset_id = 0,
             max_id = 0,
             min_id = 0,
-            add_offset = number_msn,
+            add_offset = 0,
             hash = 0))
     
     
