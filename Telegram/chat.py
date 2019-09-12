@@ -1,9 +1,11 @@
-from Telegram.connector import Connector
+from Telegram.telegram import Telegram
 
-class HandlerTelegram:
+class Chat(Telegram):
 
     def __init__(self):
-        self.connector = Connector()
+        super().__init__(self)
+
+        
         self.list_conn = list()
         self.list_msn = list()
         
@@ -23,17 +25,13 @@ class HandlerTelegram:
         
 
     def get_new_msn(self, channel):
-        msns = self.connector.get_msn(channel, 0)
+        msns = super().get_msn(channel, 0)
         new_msns = self._filter_new_msn(msns)
         
         return new_msns
-       
-
-    def _create_new_conexion(self):
-        pass
 
         
 if __name__== "__main__":
-    ht = HandlerTelegram()
-    new_msn = ht.get_new_msn("https://t.me/joinchat/AAAAAEovusdyxSfqrfCy2A")
+    ch = Chat()
+    new_msn = ch.get_new_msn("https://t.me/joinchat/AAAAAEovusdyxSfqrfCy2A")
     a = 2

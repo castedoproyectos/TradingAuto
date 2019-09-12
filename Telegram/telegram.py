@@ -2,7 +2,7 @@ from telethon import TelegramClient, events, sync
 from telethon.tl.functions.messages import GetHistoryRequest
 from Common.utils import tprint
 
-class Connector:
+class Telegram:
 
     def __init__(self):
         
